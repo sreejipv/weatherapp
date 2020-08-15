@@ -34,8 +34,7 @@ module.exports = {
       template: "./src/index.html",
     }),
     new Dotenv({
-      path: './.env', // Path to .env file (this is the default)
-      safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
+      path: path.resolve(__dirname, './.env'), // Path to .env file (this is the default)
     })
   ],
 };

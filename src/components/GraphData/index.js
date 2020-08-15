@@ -14,7 +14,7 @@ const GraphData = (props) => {
     function fetchAllcity() {
         setCompare(true);
         Promise.all(cities.map((item) =>
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${item}&units=metric&appid=${API_KEY}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${item}&units=metric&appid=${API_KEY}`)
         )).then(function (responses) {
         return Promise.all(responses.map(function (response) {
             return response.json();

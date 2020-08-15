@@ -2,11 +2,14 @@
   "name": "weatherapp",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://sreejipv.github.io/weatherapp/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

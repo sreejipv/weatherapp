@@ -13,7 +13,7 @@ const TempTable = () => {
     const API_KEY = process.env.API_KEY
   
     useEffect(()=>{
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}
         `).then(res => res.json())
         .then(
             (result) => {
@@ -28,7 +28,7 @@ const TempTable = () => {
 
       function fetchData(cityname) {
         setCity(cityname);
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=metric&appid=${API_KEY}
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=metric&appid=${API_KEY}
         `).then(res => res.json())
         .then(
             (result) => {
@@ -42,7 +42,7 @@ const TempTable = () => {
       }
 
     return (
-        <div className="flex flex-middle">
+        <div className="flex flex-middle flex-wrap">
             <TableHeader changeCity={fetchData}/>
             <Spacer ml={10}/>
             <TableContent data={data}/>
