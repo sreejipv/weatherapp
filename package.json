@@ -14,7 +14,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-google-charts": "^3.0.15"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -24,6 +25,8 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^2.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1",

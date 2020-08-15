@@ -35,29 +35,4 @@ const Spacer = (props) => {
   )
 }
 
-Spacer.propTypes = {
-
-  className: PropTypes.string,
-  m: PropTypes.number,
-  mt: PropTypes.number,
-  mb: PropTypes.number,
-  ml: PropTypes.number,
-  mr: PropTypes.number,
-  mx: PropTypes.number,
-  my: PropTypes.number
-}
-
-Spacer.defaultProps = {
-  className: '',
-  m: 0,
-  mt: 0,
-  mb: 0,
-  ml: 0,
-  mr: 0,
-  mx: 0,
-  my: 0
-}
-
-Spacer.displayName = 'Spacer'
-
 export default Spacer

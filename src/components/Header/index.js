@@ -6,7 +6,7 @@ function Header() {
         <div className="container ">
             <Spacer mt={20}/>
             <div className="wa-logo">
-                <h1>Weather App</h1>  
+                <h1 className="ta-center">Weather App</h1>  
             <Spacer mt={20}/>
             </div>
         </div>

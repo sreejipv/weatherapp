@@ -1,6 +1,9 @@
 const path = require("path");
+const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
+
   entry: "./src/index.js",
   output: { path: path.join(__dirname, "/dist"), filename: "bundle.js" },
   module: {
@@ -30,5 +33,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
+    new Dotenv({
+      path: './.env', // Path to .env file (this is the default)
+      safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
+    })
   ],
 };
